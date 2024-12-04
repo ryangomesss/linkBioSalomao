@@ -1,0 +1,25 @@
+/* Importando as fontes */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  overflow: auto; /* Impede a exibição da scrollbar */
+}
+
+/* Para permitir rolagem, mas sem mostrar a scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* Remove a largura da scrollbar */
+  height: 0px; /* Se você também quiser esconder a scrollbar horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* A cor do "polegar" da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* A cor de fundo da trilha da scrollbar */
+}
